@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#dbe1ff","surface-container-low":"#f2f3ff","primary-container":"#2563eb","inverse-on-surface":"#eef0ff","secondary":"#40608b","surface-container":"#eaedff","primary":"#004ac6","on-tertiary-container":"#bdffdb","background":"#faf8ff","on-error-container":"#93000a","outline":"#737686","surface-bright":"#faf8ff","on-secondary-fixed":"#001c3a","inverse-surface":"#283044","on-surface":"#131b2e","on-error":"#ffffff","tertiary-fixed-dim":"#4edea3","primary-fixed-dim":"#b4c5ff","surface-container-lowest":"#ffffff","surface-tint":"#0053db","outline-variant":"#c3c6d7","on-tertiary-fixed":"#002113","on-primary-fixed-variant":"#003ea8","on-tertiary-fixed-variant":"#005236","secondary-container":"#aeceff","on-secondary-container":"#375782","on-primary-container":"#eeefff","secondary-fixed":"#d4e3ff","on-background":"#131b2e","on-surface-variant":"#434655","inverse-primary":"#b4c5ff","surface":"#faf8ff","error":"#ba1a1a","tertiary-fixed":"#6ffbbe","on-secondary":"#ffffff","tertiary-container":"#007d55","surface-container-high":"#e2e7ff","on-secondary-fixed-variant":"#264872","surface-container-highest":"#dae2fd","on-primary-fixed":"#00174b","on-tertiary":"#ffffff","secondary-fixed-dim":"#a8c8f9","on-primary":"#ffffff","surface-variant":"#dae2fd","error-container":"#ffdad6","tertiary":"#006242","surface-dim":"#d2d9f4"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.5rem","space-xl":"2rem",gutter:"1.5rem",margin:"1.5rem","space-md":"1rem"},fontFamily:{"label-sm":["Noto Sans"],"body-md":["Noto Sans"],"headline-md":["Noto Sans"],"label-md":["Noto Sans"],"label-xs":["Noto Sans"],"display-lg":["Noto Sans"],"body-sm":["Noto Sans"],"headline-sm":["Noto Sans"],"body-lg":["Noto Sans"],"headline-lg":["Noto Sans"]},fontSize:{"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.01em",fontWeight:"600"}],"body-md":["14px",{lineHeight:"22px",letterSpacing:"0em",fontWeight:"400"}],"headline-md":["20px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"600"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0em",fontWeight:"600"}],"label-xs":["11px",{lineHeight:"14px",letterSpacing:"0.02em",fontWeight:"600"}],"display-lg":["30px",{lineHeight:"38px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"18px",letterSpacing:"0em",fontWeight:"400"}],"headline-sm":["18px",{lineHeight:"26px",letterSpacing:"-0.005em",fontWeight:"600"}],"body-lg":["16px",{lineHeight:"24px",letterSpacing:"-0.002em",fontWeight:"400"}],"headline-lg":["24px",{lineHeight:"32px",letterSpacing:"-0.015em",fontWeight:"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="SEJONG EduCare AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvES2ZeTFNMXxVwnWUfE-bWjcL7tl21tvn8Xmx6qFTaY2gsljvutqwykYCWET5MpXQWfRIEkNM_b5g4tZAPwiwMGQiZiGwxyqQXdSw783a0pYjPXFQeZBs0Nt3Oyokt8B0_b_OBmas9N-0MlOvIJj4yqpNPmdL2xylUIqGkPKVHBVLNWOSEqtzXdNcgL0cvFvcNJeEgFt39CKW402smS7kWty8tB78VEtOsEm0uG9A-w"/><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none truncate">EduCare AI</span><span class="font-label-xs text-label-xs text-secondary leading-tight tracking-normal truncate mt-0.5">세종특별자치시교육청</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-1.5 rounded-lg bg-surface-container-low flex items-center justify-between"><span class="font-label-xs text-label-xs text-secondary truncate">유보통합 행정지원 포털</span><span class="inline-flex items-center px-1.5 py-0.5 rounded-full font-label-xs text-label-xs bg-tertiary-fixed text-on-tertiary-fixed">v2.4 운영중</span></div></div><nav class="flex flex-col gap-1 px-space-sm py-space-sm mt-1" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>대시보드</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="calendar" href="#"><span class="material-symbols-outlined text-[20px]">calendar_month</span><span>통합 업무달력</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-all bg-primary-container text-on-primary-container font-headline-sm rounded-lg shadow-sm" data-path="ai-docs" href="#"><span class="material-symbols-outlined text-[20px]">auto_awesome</span><span>AI 문서 작성</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="ai-chat" href="#"><span class="material-symbols-outlined text-[20px]">smart_toy</span><span>AI 행정지원 챗봇</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="resources" href="#"><span class="material-symbols-outlined text-[20px]">folder_managed</span><span>자료·서식 관리</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">query_stats</span><span>업무현황 분석</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="users" href="#"><span class="material-symbols-outlined text-[20px]">corporate_fare</span><span>사용자·기관 관리</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all font-label-md text-label-md" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>시스템 설정</span></a></nav></div><div class="p-space-sm mx-space-sm mb-space-md rounded-xl bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs mb-1.5"><span class="material-symbols-outlined text-primary text-[16px]">domain</span><span class="font-label-xs text-label-xs text-secondary truncate">유보통합추진단 관리센터</span></div><div class="font-label-sm text-label-sm text-on-surface font-headline-sm truncate mb-0.5">세종특별자치시교육청</div><div class="flex items-center justify-between pt-2 mt-2 bg-surface-container-lowest/60 rounded-lg p-2"><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm text-on-surface truncate">김세종 주무관</span><span class="font-label-xs text-label-xs text-secondary truncate">교육청 총괄관리자</span></div><a class="flex items-center justify-center w-7 h-7 rounded-lg text-on-surface-variant hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#" title="로그아웃"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-md"><img alt="SEJONG EduCare AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvES2ZeTFNMXxVwnWUfE-bWjcL7tl21tvn8Xmx6qFTaY2gsljvutqwykYCWET5MpXQWfRIEkNM_b5g4tZAPwiwMGQiZiGwxyqQXdSw783a0pYjPXFQeZBs0Nt3Oyokt8B0_b_OBmas9N-0MlOvIJj4yqpNPmdL2xylUIqGkPKVHBVLNWOSEqtzXdNcgL0cvFvcNJeEgFt39CKW402smS7kWty8tB78VEtOsEm0uG9A-w"/><div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary"><span class="text-on-surface font-headline-sm">세종 EduCare AI</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-primary font-headline-sm">행정 총괄 콘솔</span></div></div><div class="flex items-center gap-space-md"><div class="relative hidden xl:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-80 h-9 pl-9 pr-14 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" placeholder="업무, 공문서, 행정서식 또는 AI 지침 검색..." type="text"/><span class="absolute right-2.5 px-1.5 py-0.5 rounded font-label-xs text-label-xs bg-surface-container text-secondary font-headline-sm">⌘K</span></div><div class="hidden md:flex items-center gap-2 px-space-sm py-1 rounded-full bg-surface-container-low"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-xs text-label-xs text-tertiary font-headline-sm">AI 어시스턴트 정상 가동 중</span></div><div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-[18px] text-primary">account_balance</span><span class="font-label-sm text-label-sm text-on-surface truncate max-w-[140px]">세종가온유치원 외 51개원</span><span class="material-symbols-outlined text-[16px] text-outline">arrow_drop_down</span></div><div class="relative flex items-center"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-xs text-[10px] font-headline-sm">3</span></button></div><div class="flex items-center gap-space-sm pl-2"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden 2xl:flex flex-col"><span class="font-label-sm text-label-sm text-on-surface leading-none">김세종</span><span class="font-label-xs text-label-xs text-secondary mt-0.5">교육청 관리자</span></div></div></div></header><main class="w-full pt-16 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Utility Context & Breadcrumbs -->
+<div class="px-space-lg py-space-md bg-surface-container-lowest/80 backdrop-blur-sm">
+<div class="max-w-[1600px] mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 font-label-xs text-label-xs text-secondary">
+<span>세종 EduCare AI</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span>AI 문서 작성</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-headline-sm">신규 생성</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">AI 행정문서 및 안내문 생성</h1>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-xs text-label-xs">표준 서식 준수 엔진 v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-3xl">
+          작성 목적과 필수 정보를 입력하면 세종특별자치시교육청 행정 규정에 부합하는 공문서 및 가정통신문 초안을 AI가 실시간으로 구조화하여 작성합니다.
+        </p>
+</div>
+<!-- Quick Status Indicators -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>공문서 표준 데이터베이스 연동됨</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>최근 생성 이력</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Workspace Canvas: Two-Column Split (50% : 50%) -->
+<div class="px-space-lg py-space-lg">
+<div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-space-lg items-start">
+<!-- LEFT COLUMN: Input Form Parameters -->
+<section class="flex flex-col gap-space-md bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<!-- Header & Reset Area -->
+<div class="flex items-center justify-between pb-space-sm bg-gradient-to-r from-transparent via-transparent to-transparent">
+<div class="flex items-center gap-2">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">문서 파라미터 입력</h2>
+<span class="font-label-xs text-label-xs text-secondary">교육청 표준 가이드라인에 맞춘 필드 구성</span>
+</div>
+</div>
+<button class="flex items-center gap-1 text-primary hover:text-primary-container font-label-sm text-label-sm transition-colors" id="btn-load-draft" type="button">
+<span class="material-symbols-outlined text-[16px]">folder_open</span>
+<span>임시저장 불러오기</span>
+</button>
+</div>
+<!-- 1. Document Type Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface flex items-center justify-between">
+<span>문서 유형 선택 <span class="text-error">*</span></span>
+<span class="font-label-xs text-label-xs text-outline">세종시 유보통합 공통 서식</span>
+</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2" id="doc-type-group">
+<!-- 가정통신문 (Active) -->
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-primary text-on-primary shadow-sm font-label-sm text-label-sm transition-all" data-type="가정통신문" type="button">
+<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+<span class="truncate">가정통신문</span>
+</button>
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all" data-type="학부모 안내문" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">campaign</span>
+<span class="truncate">학부모 안내문</span>
+</button>
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all" data-type="공문 초안" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">mark_email_unread</span>
+<span class="truncate">공문 초안</span>
+</button>
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all" data-type="업무보고서" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">assignment</span>
+<span class="truncate">업무보고서</span>
+</button>
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all" data-type="회의 안내문" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">groups</span>
+<span class="truncate">회의 안내문</span>
+</button>
+<button class="doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all" data-type="기관 운영 안내자료" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">corporate_fare</span>
+<span class="truncate">기관 운영자료</span>
+</button>
+</div>
+</div>
+<!-- 2. Form Inputs -->
+<div class="flex flex-col gap-space-md">
+<!-- 문서 제목 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface flex items-center justify-between" for="input-title">
+<span>문서 제목 <span class="text-error">*</span></span>
+<span class="font-label-xs text-label-xs text-secondary">간결하고 직관적인 표제</span>
+</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-title" type="text" value="2024학년도 겨울철 영유아 감염병(독감·노로바이러스) 예방 및 위생수칙 안내"/>
+</div>
+<!-- 작성 목적 & 수신 대상 (2-Col on larger screen) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="input-purpose">작성 목적 <span class="text-error">*</span></label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-purpose" type="text" value="동절기 감염병 확산 방지를 위한 가정 내 일상 방역 협조 요청 및 등원 기준 안내"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="input-target">수신 대상 <span class="text-error">*</span></label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-target" type="text" value="원아 학부모 (만 3세~5세 유아 및 영아 보호자)"/>
+</div>
+</div>
+<!-- 주요 포함 내용 (Textarea) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-on-surface" for="input-content">주요 포함 내용 <span class="text-error">*</span></label>
+<button class="font-label-xs text-label-xs text-primary hover:underline" id="btn-insert-sample" type="button">
+                교육청 권장 서식 자동채우기
+              </button>
+</div>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface leading-relaxed focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all resize-none" id="input-content" rows="5">1. 최근 세종시 관내 유행 중인 인플루엔자 증상 및 등원 중지 기준
+2. 손 씻기 및 기침 예절 등 가정 내 위생 수칙
+3. 감염 시 등원 인정 결석 서류(의사 진단서/소견서) 제출 절차</textarea>
+</div>
+<!-- 일정 및 장소 & 발신기관 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="input-period">시행 기간 및 적용 시기</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">event</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-period" type="text" value="2024년 12월 1일 ~ 동절기 기간 상시"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface" for="input-issuer">발신 명의 / 기관</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[18px]">domain</span>
+<input class="w-full h-10 pl-9 pr-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-issuer" type="text" value="세종가온유치원장"/>
+</div>
+</div>
+</div>
+<!-- 추가 요청사항 / 어조 설정 -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface flex items-center justify-between" for="input-tone">
+<span>추가 요청사항 및 어조(Tone) 설정</span>
+<span class="font-label-xs text-label-xs text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+                AI 감성 튜닝
+              </span>
+</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary-container transition-all" id="input-tone" type="text" value="공손하고 신뢰감 있는 교육청 표준 어조, 학부모가 읽기 쉬운 항목별 글머리 기호 사용"/>
+</div>
+<!-- Advanced AI Options Pill Selection -->
+<div class="p-3 rounded-lg bg-surface-container-low/70 flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-label-xs text-label-xs text-on-surface">참조 규정 매핑:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-xs text-label-xs text-secondary">학교보건법 제8조</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-xs text-label-xs text-secondary">유아교육법 제21조</span>
+</div>
+<label class="flex items-center gap-1.5 cursor-pointer text-secondary font-label-xs text-label-xs hover:text-on-surface select-none">
+<input checked="" class="w-3.5 h-3.5 rounded text-primary focus:ring-0" type="checkbox"/>
+<span>개인정보보호 및 취약용어 사전 필터링</span>
+</label>
+</div>
+</div>
+<!-- Action Buttons Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-sm">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="flex-1 sm:flex-initial h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-1.5" id="btn-reset-form" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">restart_alt</span>
+<span>입력값 초기화</span>
+</button>
+<button class="flex-1 sm:flex-initial h-10 px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">save</span>
+<span>임시저장</span>
+</button>
+</div>
+<button class="w-full sm:w-auto h-11 px-6 rounded-lg bg-primary-container text-on-primary shadow-md hover:bg-primary transition-all font-label-md text-label-md flex items-center justify-center gap-2 group" id="btn-generate-ai" type="button">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed group-hover:rotate-12 transition-transform">auto_awesome</span>
+<span class="font-headline-sm">AI 문서 초안 생성</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- RIGHT COLUMN: AI Generated Preview & Live Inspection -->
+<section class="flex flex-col gap-space-md">
+<!-- Live Toolbar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<!-- Generation Status -->
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-xs text-label-xs shadow-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span>✨ AI 생성 완료 (초안)</span>
+</span>
+<span class="font-label-xs text-label-xs text-outline">최종 수정: 방금 전</span>
+</div>
+<!-- Document Control Actions -->
+<div class="flex items-center flex-wrap gap-1.5">
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-xs text-label-xs transition-colors" id="btn-copy-doc" title="문서 전체 복사" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">content_copy</span>
+<span>복사</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-xs text-label-xs transition-colors" title="인라인 편집" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">edit</span>
+<span>서식 검토 및 편집</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-xs text-label-xs transition-colors" title="워드 문서 다운로드" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+<span>DOCX</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-xs text-label-xs transition-colors" title="PDF 인쇄본 출력" type="button">
+<span class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+<span>PDF</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-secondary hover:bg-surface-container transition-colors" title="인쇄 미리보기" type="button">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+</div>
+</div>
+<!-- Official Document Sheet Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-6 sm:p-10 relative overflow-hidden transition-all" id="document-preview-card">
+<!-- Subtle Paper Texture & Watermark -->
+<div class="absolute -right-16 -bottom-16 w-64 h-64 rounded-full bg-primary/5 pointer-events-none blur-3xl"></div>
+<!-- Official Letterhead Header -->
+<div class="flex flex-col items-center text-center pb-6 bg-gradient-to-b from-transparent to-transparent">
+<!-- Institutional Emblem / Identity Badge -->
+<div class="flex items-center gap-2 mb-2">
+<span class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px]">school</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase">세종특별자치시교육청 유보통합지원과 / 세종가온유치원</span>
+</div>
+<!-- Document Formal Reference Banner -->
+<div class="inline-block px-4 py-1 rounded bg-surface-container-low text-secondary font-label-xs text-label-xs mb-3">
+              문서번호: 가온-2024-가통-088 | 공개구분: 공개(학부모 배부용)
+            </div>
+<!-- Main Document Heading -->
+<h2 class="font-headline-lg text-headline-lg text-on-surface text-center max-w-xl leading-snug px-4 py-1">
+              【가정통신문 2024-제88호】<br/>
+              겨울철 유행성 감염병 예방 및 건강한 원원 생활을 위한 안내
+            </h2>
+</div>
+<!-- Formal Greeting Intro -->
+<div class="py-4 bg-surface-container-lowest rounded-lg">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed text-justify indent-2">
+              학부모님 안녕하십니까? 쌀쌀해진 날씨 속에서 댁내 평안과 건강을 기원합니다. 최근 동절기 기온 급강하로 인해 관내 영유아를 중심으로 인플루엔자(계절 독감) 및 노로바이러스 장관감염증 환자가 급증하고 있습니다. 본원에서는 원아들의 건강하고 안전한 공동체 생활을 위하여 겨울철 감염병 예방 수칙 및 등원 기준을 아래와 같이 안내드리오니, 각 가정에서도 일상 방역에 적극적인 관심과 협조를 부탁드립니다.
+            </p>
+</div>
+<!-- Structured Content Sections -->
+<div class="space-y-5 my-4">
+<!-- Section 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-primary-container text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">주요 유행 감염병 현황 및 의심 증상 안내</h3>
+</div>
+<ul class="list-disc list-inside space-y-1.5 pl-2 font-body-sm text-body-sm text-on-surface-variant">
+<li><strong class="text-on-surface">인플루엔자(독감):</strong> 38℃ 이상의 갑작스러운 고열, 기침, 인후통, 근육통, 두통 및 극심한 피로감 동반</li>
+<li><strong class="text-on-surface">노로바이러스 감염증:</strong> 오심, 구토, 설사, 복통 등 급성 위장관 증상 (영유아의 경우 탈수 주의)</li>
+<li><strong class="text-on-surface">잠복기 및 전파:</strong> 비말(기침·재채기) 및 접촉을 통한 집단 전파력이 매우 강하므로 초기 의심 시 선제 조치 권고</li>
+</ul>
+</div>
+<!-- Section 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-primary-container text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">감염 의심 시 등원 기준 및 등원 인정 결석 처리 안내</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-xs flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">front_hand</span>
+                    등원 중지(격리) 원칙
+                  </span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                    해열제 복용 없이 정상 체온 회복 후 24시간 경과 시까지 원내 등원을 중지합니다.
+                  </p>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest shadow-xs flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+                    출석 인정 서류 제출
+                  </span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                    의사 진단서, 소견서 또는 진료확인서 중 1부를 완치 등원 시 담임교사에게 제출 (출석 인정).
+                  </p>
+</div>
+</div>
+</div>
+<!-- Section 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low/60 flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded bg-primary-container text-on-primary font-label-xs text-label-xs flex items-center justify-center font-bold">3</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">가정 내 일상 예방 수칙 및 협조 요청사항</h3>
+</div>
+<div class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">올바른 30초 손 씻기:</strong> 외출 후, 배변 후, 식사 전후 흐르는 물에 비누로 30초 이상 손 씻기 생활화</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">기침 예절 준수:</strong> 기침이나 재채기 시 옷소매 안쪽으로 입과 코를 가리는 습관 지도</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">check_circle</span>
+<span><strong class="text-on-surface">즉각적인 이상 증상 공유:</strong> 발열이나 구토 발생 시 즉시 원으로 연락 후 가정 내 안정 가료</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Sign-off Footer -->
+<div class="pt-8 pb-4 flex flex-col items-center justify-center gap-3">
+<span class="font-headline-sm text-headline-sm text-on-surface">2024년 11월 20일</span>
+<div class="flex items-center gap-3">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-widest">세 종 가 온 유 치 원 장</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-xs text-label-xs tracking-wider">[직인생략]</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary">문의처: 원무행정실 (044-860-0000) / 보건실 (044-860-0001)</span>
+</div>
+</div>
+<!-- AI Assistant Recommendation Box -->
+<div class="p-space-md rounded-xl bg-tertiary-fixed/30 flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface font-headline-sm">세종형 유보통합 표준 검증 통과</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              해당 초안은 2024년도 2학기 세종특별자치시교육청 보건안전 매뉴얼 권고 양식(질병명 명시, 격리해제 증빙 절차)에 부합합니다.
+            </p>
+</div>
+</div>
+<!-- Bottom Warning Disclaimer Banner -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0 mt-0.5">warning</span>
+<p class="font-body-sm text-body-sm text-secondary leading-relaxed">
+<strong class="text-on-surface font-headline-sm">주의사항:</strong> 본 문서는 SEJONG EduCare AI가 생성한 초안입니다. 관련 법령, 학사 일정 및 유치원 운영위원회 의결 지침에 부합하는지 기관 담당자의 최종 검토 및 수정을 거쳐 배포하시기 바랍니다.
+          </p>
+</div>
+</section>
+</div>
+</div>
+<!-- Notification Toast Container for Copy / Feedback -->
+<div class="fixed bottom-6 right-6 hidden transform translate-y-4 opacity-0 transition-all duration-300 z-50" id="ai-toast">
+<div class="flex items-center gap-2 px-4 py-3 rounded-xl bg-inverse-surface text-inverse-on-surface shadow-xl">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">check_circle</span>
+<span class="font-label-sm text-label-sm" id="toast-message">내용이 클립보드에 복사되었습니다.</span>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // 1. Doc Type Selector Interaction
+    const typeButtons = document.querySelectorAll('.doc-type-btn');
+    typeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        typeButtons.forEach(b => {
+          b.className = 'doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-all';
+          const icon = b.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[18px] text-secondary';
+        });
+        btn.className = 'doc-type-btn flex items-center gap-2 px-3 py-2.5 rounded-lg bg-primary text-on-primary shadow-sm font-label-sm text-label-sm transition-all';
+        const activeIcon = btn.querySelector('.material-symbols-outlined');
+        if (activeIcon) activeIcon.className = 'material-symbols-outlined text-[18px] text-on-primary';
+        
+        showToast(`'${btn.dataset.type}' 서식 템플릿이 로드되었습니다.`);
+      });
+    });
+
+    // 2. Form Reset Functionality
+    const btnReset = document.getElementById('btn-reset-form');
+    if (btnReset) {
+      btnReset.addEventListener('click', () => {
+        document.getElementById('input-title').value = '';
+        document.getElementById('input-purpose').value = '';
+        document.getElementById('input-target').value = '';
+        document.getElementById('input-content').value = '';
+        document.getElementById('input-period').value = '';
+        document.getElementById('input-tone').value = '';
+        showToast('입력 양식이 초기화되었습니다.');
+      });
+    }
+
+    // 3. Sample Filler
+    const btnSample = document.getElementById('btn-insert-sample');
+    if (btnSample) {
+      btnSample.addEventListener('click', () => {
+        document.getElementById('input-title').value = '2024학년도 겨울철 영유아 감염병(독감·노로바이러스) 예방 및 위생수칙 안내';
+        document.getElementById('input-purpose').value = '동절기 감염병 확산 방지를 위한 가정 내 일상 방역 협조 요청 및 등원 기준 안내';
+        document.getElementById('input-target').value = '원아 학부모 (만 3세~5세 유아 및 영아 보호자)';
+        document.getElementById('input-content').value = '1. 최근 세종시 관내 유행 중인 인플루엔자 증상 및 등원 중지 기준\n2. 손 씻기 및 기침 예절 등 가정 내 위생 수칙\n3. 감염 시 등원 인정 결석 서류(의사 진단서/소견서) 제출 절차';
+        document.getElementById('input-period').value = '2024년 12월 1일 ~ 동절기 기간 상시';
+        document.getElementById('input-tone').value = '공손하고 신뢰감 있는 교육청 표준 어조, 학부모가 읽기 쉬운 항목별 글머리 기호 사용';
+        showToast('세종 교육청 권장 표준 항목이 입력되었습니다.');
+      });
+    }
+
+    // 4. AI Generate Button with Animation Effect
+    const btnGen = document.getElementById('btn-generate-ai');
+    const previewCard = document.getElementById('document-preview-card');
+    if (btnGen && previewCard) {
+      btnGen.addEventListener('click', () => {
+        btnGen.disabled = true;
+        btnGen.classList.add('opacity-75');
+        const originalText = btnGen.innerHTML;
+        btnGen.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>AI 문서 재구성 중...</span>';
+        
+        previewCard.classList.add('opacity-40', 'scale-[0.99]');
+
+        setTimeout(() => {
+          btnGen.disabled = false;
+          btnGen.classList.remove('opacity-75');
+          btnGen.innerHTML = originalText;
+          previewCard.classList.remove('opacity-40', 'scale-[0.99]');
+          showToast('최신 입력 파라미터를 기반으로 초안이 갱신되었습니다.');
+        }, 800);
+      });
+    }
+
+    // 5. Copy Document Action
+    const btnCopy = document.getElementById('btn-copy-doc');
+    if (btnCopy) {
+      btnCopy.addEventListener('click', () => {
+        showToast('가정통신문 전체 내용이 클립보드에 복사되었습니다.');
+      });
+    }
+
+    // 6. Toast Notification Helper
+    function showToast(msg) {
+      const toast = document.getElementById('ai-toast');
+      const textElem = document.getElementById('toast-message');
+      if (!toast || !textElem) return;
+      textElem.textContent = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.remove('translate-y-4', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+      }, 10);
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-4', 'opacity-0');
+        setTimeout(() => {
+          toast.classList.add('hidden');
+        }, 300);
+      }, 2500);
+    }
+  })();
+</script></main></div></body></html>

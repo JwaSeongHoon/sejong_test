@@ -1,0 +1,6 @@
+{
+  "name": "세종 유보통합 AI 행정지원 플랫폼",
+  "description": "세종특별자치시교육청 유보통합 공통 행정·일정 관리 및 지능형 AI 문서 작성 지원 포털",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
